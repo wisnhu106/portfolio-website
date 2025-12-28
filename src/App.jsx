@@ -4,6 +4,7 @@ import ReactLogo from "./assets/react.svg"
 import TailwindLogo from "./assets/tailwind.png"
 import Profile from "./img/profile.jpeg"
 import PortoImg1 from "./img/porto1.png"
+import PortoImg2 from "./img/porto2.png"
 import PortoImg3 from "./img/porto3.png"
 
 function App() {
@@ -20,23 +21,23 @@ function App() {
   const projects = [
     {
       title: "Personal Portofolio Website",
-      description: "",
+      description: "A sleek and responsive personal portfolio designed to showcase early web projects and professional skills using vanilla web technologies.",
       tech: ["HTML", "JavaScript", "CSS"],
       link: "https://github.com/wisnhu106/portofolio",
       image: PortoImg1
     },
     {
       title: "Company Profile Website",
-      description: "",
+      description: "A professional corporate landing page featuring a modern UI, built with React to ensure a seamless and high-performance user experience.",
       tech: ["CSS", "React"],
       link: "https://github.com/wisnhu106/my-company-profile",
-      image: ""
+      image: PortoImg2
     },
     {
       title: "Personal Website",
-      description: "",
+      description: "A high-performance personal website leveraging Vite and Tailwind CSS to deliver a fast, modern, and highly responsive digital experience.",
       tech: ["React", "Tailwind", "Vite"],
-      link: "https://github.com/wisnhu106/porto-react",
+      link: "https://github.com/wisnhu106/portfolio-website",
       image: PortoImg3
     }
   ]
@@ -98,6 +99,7 @@ function App() {
       </header>
 
       <main className='bg-[linear-gradient(to_bottom,#020617_0%,#0F172A_35%,#1E1B4B_70%,#020617_100%)]'>
+        
         <section id='home' className='relative w-full h-screen overflow-hidden flex items-center justify-center'>
           <img src={ReactLogo} alt="Logo React" className='absolute -top-30 -right-30 h-100 opacity-20 pointer-events-none animate-[spin_30s_linear_infinite]' />
           <img 
