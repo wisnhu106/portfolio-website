@@ -2,6 +2,9 @@ import { React, useEffect, useState } from 'react'
 import './App.css'
 import ReactLogo from "./assets/react.svg"
 import TailwindLogo from "./assets/tailwind.png"
+import Profile from "./img/profile.jpeg"
+import PortoImg1 from "./img/porto1.png"
+import PortoImg3 from "./img/porto3.png"
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -20,7 +23,7 @@ function App() {
       description: "",
       tech: ["HTML", "JavaScript", "CSS"],
       link: "https://github.com/wisnhu106/portofolio",
-      image: "/src/img/porto1.png"
+      image: {PortoImg1}
     },
     {
       title: "Company Profile Website",
@@ -34,7 +37,7 @@ function App() {
       description: "",
       tech: ["React", "Tailwind", "Vite"],
       link: "https://github.com/wisnhu106/porto-react",
-      image: "/src/img/porto3.png"
+      image: {PortoImg3}
     }
   ]
 
@@ -135,7 +138,7 @@ function App() {
             <div className='relative group justify-self-center'>
               <div className='absolute -inset-1 bg-gradient-to-r from-[#38BDF8] to-[#2563EB] rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000'></div>
               <div className='relative h-64 w-64 md:w-80 md:h-80 bg-[#1E293B] rounded-2xl border border-white/10 overflow-hidden'>
-                <img src="src/img/profile.jpeg" alt=" Profile Photo" className='w-full h-full object-cover' />
+                <img src={Profile} alt=" Profile Photo" className='w-full h-full object-cover' />
               </div>
             </div>
 
