@@ -23,7 +23,7 @@ function App() {
       description: "",
       tech: ["HTML", "JavaScript", "CSS"],
       link: "https://github.com/wisnhu106/portofolio",
-      image: {PortoImg1}
+      image: PortoImg1
     },
     {
       title: "Company Profile Website",
@@ -37,7 +37,7 @@ function App() {
       description: "",
       tech: ["React", "Tailwind", "Vite"],
       link: "https://github.com/wisnhu106/porto-react",
-      image: {PortoImg3}
+      image: PortoImg3
     }
   ]
 
